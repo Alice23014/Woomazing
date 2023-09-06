@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="css/main.css" />
+        <title>Womazing</title>
+    </head>
+
+    <body>
+        <header class="header" id="header">
+            <div class="container">
+                <nav class="nav__wrapper">
+                    <a href="index.html" class="nav__logo">
+                        <img src="img/logo.svg" alt="momazing" />
+                    </a>
+
+                    <ul class="nav">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="shop.html">Магазин</a></li>
+                        <li><a href="about.html">О бренде</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+
+                    <div class="nav-right">
+                        <div class="nav__phone">
+                            <a href="#" class="nav__phone-img" id="btn-open">
+                                <img src="img/phone.svg" alt="phone" />
+                            </a>
+                            <a href="tel:+74958235412" class="nav__tel"> +7 (495) 823-54-12 </a>
+                        </div>
+
+                        <a href="cart.html" class="nav__img-cart">
+                            <img src="img/cart.svg" alt="cart" />
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="one-item">
+            <div class="container">
+                <div class="section__main">
+                    <h1 class="section__title">Свитшот Sweet Shot</h1>
+                    <div class="section__text">
+                        <a href="index.html" class="section__text-black">Главная</a>
+                        <p class="header__text-dash">—</p>
+                        <a href="shop.html" class="section__text-gray">Свитшот Sweet Shot</a>
+                    </div>
+                </div>
+                <div class="sweatshirt__wrapper">
+                    <div class="sweatshirt__img">
+                        <img src="img/third-photo-collection.jpg" alt="" />
+                    </div>
+                    <div class="sweatshirt__parameter">
+                        <div class="sweatshirt__price">
+                            <div class="sweatshirt__price-discount price">$311</div>
+                            <div class="sweatshirt__price-full price-old">$450</div>
+                        </div>
+                        <div class="sweatshirt__sizes">
+                            <p class="sweatshirt__text">Выберите размер</p>
+                            <div class="sweatshirt__sizes-wrapper">
+                                <button class="sweatshirt__size">S</button>
+                                <button class="sweatshirt__size active">M</button>
+                                <button class="sweatshirt__size">L</button>
+                                <button class="sweatshirt__size">XL</button>
+                                <button class="sweatshirt__size">XL</button>
+                            </div>
+                        </div>
+                        <div class="sweatshirt__colours">
+                            <div class="sweatshirt__text">Выберите цвет</div>
+                            <div class="sweatshirt__colours-wrapper">
+                                <button class="sweatshirt__colour brown"></button>
+                                <button class="sweatshirt__colour gray active"></button>
+                                <button class="sweatshirt__colour pink"></button>
+                                <button class="sweatshirt__colour orange"></button>
+                            </div>
+                        </div>
+                        <div class="sweatshirt__cart">
+                            <div class="sweatshirt__cart-amount">1</div>
+                            <a class="sweatshirt__cart-btn btn"> Добавить в корзину </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="related-products">
+            <div class="container">
+                <h2 class="recommendations__text">Связанные товары</h2>
+                <div class="recommendations__wrapper">
+                    <div class="clothes__t-shirt">
+                        <a href="one-item.html" class="clothes__img">
+                            <img src="img/first-photo-collection.jpg" alt="" />
+                        </a>
+                        <h4 class="clothes__title">Футболка USA</h4>
+                        <div class="clothes__price">
+                            <div class="clothes__price__discount price">$129</div>
+                        </div>
+                    </div>
+                    <div class="clothes__water">
+                        <a href="one-item.html" class="clothes__img">
+                            <img src="img/second-photo-collection.jpg" alt="" />
+                        </a>
+                        <h4 class="clothes__title">Купальник Glow</h4>
+                        <div class="clothes__price__discount price">$129</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="wrapper-modal-first">
+            <div id="overlay" class="overlay"></div>
+            <div id="modal-window">
+                <div>
+                    <a href="#" id="btn-close"></a>
+                </div>
+                <div class="content">
+                    <h3 class="content__title">Заказать обратный звонок</h3>
+
+                    <form class="content__form" action="#">
+                        <input type="text" class="content__input" placeholder="Имя" />
+                        <input type="text" class="content__input" placeholder="E-mail" />
+                        <input type="text" class="content__input" placeholder="Телефон" />
+                        <button id="call-submit" class="content__button" type="submit">Заказать звонок</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="wrapper-modal-second">
+            <div class="overlay"></div>
+            <div id="response-modal" class="response-modal">
+                <div class="response-modal__content">
+                    <p class="response-modal__title">Отлично! Мы вам перезвоним!</p>
+                    <button id="btn-close-response" class="btn-close-response">Закрыть</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="column__wrapper">
+                    <div class="right__column">
+                        <a href="index.html" class="footer__logo">
+                            <img src="img/logo.svg" alt="momazing" />
+                        </a>
+                        <div class="confidence">
+                            <p class="confidence__private1">© Все права защищены</p>
+                            <p class="confidence__private2">Политика конфиденциальности</p>
+                            <p class="confidence__private3">Публичная оферта</p>
+                        </div>
+                    </div>
+                    <div class="center__column">
+                        <ul class="nav nav__footer">
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="shop.html">Магазин</a></li>
+                            <li><a href="about.html">О бренде</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                        <ul class="assortment">
+                            <li><a href="#">Пальто</a></li>
+                            <li><a href="#">Свитшоты</a></li>
+                            <li><a href="#">Кардиганы</a></li>
+                            <li><a href="#">Толстовки</a></li>
+                        </ul>
+                    </div>
+                    <div class="left-column">
+                        <div class="left__column__contacts">
+                            <a href="tel:+74958235412" class="nav__tel"> +38 (044) 823-54-12 </a>
+                            <a href="mailto:hello@womazing.com">hello@womazing.com</a>
+                        </div>
+                        <div class="left__column__items">
+                            <div class="left__column__item">
+                                <img src="img/instagram.svg" alt="" />
+                            </div>
+                            <div class="left__column__item">
+                                <img src="img/facebook.svg" alt="" />
+                            </div>
+                            <div class="left__column__item">
+                                <img src="img/twitter.svg" alt="" />
+                            </div>
+                        </div>
+                        <div class="left-column__payment">
+                            <img src="img/visa-mastercard.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
